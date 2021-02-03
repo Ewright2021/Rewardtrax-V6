@@ -1,0 +1,41 @@
+extends layout.pug
+
+block header-content
+    header
+        .container
+            .row.py-3 
+                .col-6.col-sm-4.col-lg-2.mx-auto
+                    img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="")
+            .row
+                .col-12.bg-light
+                    include ./includes/header-nav-logged-in.pug
+
+block main-content
+    main.d-flex.flex-column.flex-grow-1.py-4
+        .container
+            .row.mb-4
+                .col-12.col-md-8.mx-auto.screen-title
+                    h1.text-center Performance Tracking
+                    p.text-center.lead Track your goals online with an easy to use submission form. 
+
+            .row.mb-4
+                .col-12.col-xxl-8.mx-auto  
+                    .row
+                        .col-12
+                            h5.widget-title.bg-primary.text-light.py-2.p-2 Promotions
+                        .col-12
+                            -for(i=0; i< 4; i++)    
+                                .row.mx-auto.shadow-sm.mb-3.pb-3.pb-lg-0
+                                    .col-12.col-md-4.mb-3.mb-md-0
+                                        small.text-muted.d-block.promo-name Promotion Name
+                                        a(href="#") Promotion 2 - Goal Tiering
+                                    .col-6.col-md-4.col-lg-3
+                                        small.text-muted.d-block Sale Dates
+                                        p.sale-dates 5/1/2019 -  5/31/2021
+
+                                    .col-6.col-md-4.col-lg-3.text-md-right
+                                        small.text-muted.d-block Claim Dates
+                                        p.claim-dates 5/1/2019 - 5/31/2021
+                                    .col-6.col-md-4.col-lg-2
+                                        a.btn.btn-outline-primary.w-100.enter-promo-sale-btn(href="/dist/templates/claims-form-1.html") Enter Sale
+                                    

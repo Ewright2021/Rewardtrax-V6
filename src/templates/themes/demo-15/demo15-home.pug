@@ -1,0 +1,106 @@
+extends ../../layout.pug
+
+block header-content
+    header.text-center
+        .container
+            .row.py-3 
+                .col-6.col-sm-4.col-lg-2.mx-auto
+                    img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="")
+            .row
+                .col-12.bg-light
+                    include ../../includes/header-nav-logged-in.pug
+                                    
+
+block main-content
+        main.d-flex.flex-column.flex-grow-1
+            section.jumbotron(style="background-image: url('https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png'); background-position: bottom; background-repeat:no-repeat; background-size: cover;")
+                .container
+                    .row.justify-content-center
+                        .col-12.col-md-6.py-5.text-white.text-center.mx-auto
+                            .row
+                                .col-12
+                                    .display-4 Demo, Say Yes to Adventure!
+                                    p.lead Earn. Redeem . Relax  
+                                .col-12.col-lg-6.mx-auto
+                                    .d-grid.gap-2.d-md-flex
+                                        a.btn.btn-primary.w-100(href="#") Start Earning
+                                        a.btn.btn-primary.w-100(href="#") Start Shopping
+            section.welcome-msg.py-5.text-center.text-light.bg-primary
+                .container
+                    h1 Thank You For Being Our Partner!
+                    p.mb-0 Use your points to explore and discover the world around you. From plane tickets, to hotel stays and activities, the possibilities are endless. 
+            section.pax-stats
+                .row.text-center.mx-auto
+                    .col-12.col-md-4.p-5.bg-light
+                        h4.widget-title Wish List
+
+                    .col-12.col-md-4.p-5.bg-dark.text-light
+                        h4.widget-title Goal Tracking
+                    .col-12.col-md-4.p-5.bg-light
+                        h4.widget-title Trivia
+
+            section.pax-awards.py-5
+                .container
+                    .row.text-center
+                        .col-12
+                            h3.section-title My Awards
+                            p.lead Review your awards and adjustments.
+                    .row 
+                        .col-12.col-lg-8.mx-auto
+                            .table-responsive
+                                table.table.table-striped
+                                    thead
+                                        tr
+                                            th(scope='col') #
+                                            th(scope='col') Date
+                                            th(scope='col') Description
+                                            th(scope='col') Amount
+                                    tbody
+                                        tr
+                                            th(scope='row') 1
+                                            td 11/6/2020
+                                            td Win Wheel Bonus
+                                            td 100,000
+                                        tr
+                                            th(scope='row') 2
+                                            td 8/11/2020
+                                            td Award for Survey
+                                            td 200
+                                        tr
+                                            th(scope='row') 3
+                                            td 10/24/2018
+                                            td Thanks for your trust -- points for training!
+                                            td 500
+
+                    
+
+
+
+
+
+
+           
+                     
+
+               
+block footer-content
+    footer
+        .container-fluid
+            .row
+                .col-12.bg-white
+                    ul.nav.justify-content-center
+                        li.nav-item
+                            a.nav-link(href="#") About Us
+                        li.nav-item
+                            a.nav-link(href="#") Rules
+                        li.nav-item
+                            a.nav-link(href="#") Privacy Policy
+                        li.nav-item
+                            a.nav-link(href="#") Terms of Use
+            .row
+                .col-12.bg-primary
+                    small.d-block.text-center.text-light.py-3 Copyright &copy; 2021 RewardTrax | All rights reserved.
+
+
+
+        

@@ -1,0 +1,37 @@
+extends layout.pug
+
+block header-content
+    header
+        .container
+            .row.py-3 
+                .col-6.col-sm-4.col-lg-2.mx-auto
+                    img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="")
+            .row
+                .col-12.bg-light
+                    include ./includes/header-nav-logged-in.pug
+
+block main-content
+    main.d-flex.flex-column.flex-grow-1.py-4
+        .container
+            .row
+                .col-12.col-md-8.mx-auto.screen-title
+                    h1.text-center Leader Board
+                    p.text-center.lead See where you and your competitors rank.
+            .row
+                .col-12.col-xxl-8.mx-auto.text-center
+                    .table-responsive
+                        table.table
+                            thead
+                                tr
+                                    th(scope="col") #
+                                    th(scope="col") First Name
+                                    th(scope="col") Last Name
+                                    th(scope="col") Region
+                                    th(scope="col") Points Awarded
+                            tbody#leaderboard-table   
+                                
+                                
+
+block page-scripts
+    script(src='/../src/js/leaderboard.js')
+                   

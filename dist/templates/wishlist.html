@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- Jquery-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- DevEx Default Styles-->
+  <link href="https://cdn3.devexpress.com/jslib/20.2.4/css/dx.common.css" rel="stylesheet">
+  <link href="https://cdn3.devexpress.com/jslib/20.2.4/css/dx.light.css" rel="stylesheet">
+  <script src="https://cdn3.devexpress.com/jslib/20.2.4/js/dx.all.js"></script>
+  <!-- Global Styles-->
+  <link rel="stylesheet" href="/../src/scss/style.css">
+  <title>Rewardtrax V6 Themes</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row py-3"> 
+        <div class="col-6 col-sm-4 col-lg-2 mx-auto"><img class="img-fluid" src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png" alt=""></div>
+      </div>
+      <div class="row">
+        <div class="col-12 bg-light">
+          <nav class="navbar navbar-expand-xl navbar-light bg-light">
+            <div class="container-fluid justify-content-end">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-md-auto">
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Welcome</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/dist/templates/my-account.html">My Account</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/dist/templates/quick-points.html">Quick Points</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/dist/templates/performance-tracking.html">Performance Tracking</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/dist/templates/leaderboard.html">Leaderboard</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/dist/templates/learn-n-earn.html">Learn & Earn</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/dist/templates/shopping.html">Shopping</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/dist/templates/profile.html">Profile</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/dist/templates/contact.html">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/dist/templates/promotions.html">Promotions</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="d-flex flex-column flex-grow-1 py-4">
+    <div class="container">
+      <div class="row" id="shopping-navbar">
+        <div class="col-8 col-md-3 col-xl-2 order-1 mb-3"><a class="btn btn-primary w-100" href="#">Departments</a></div>
+        <div class="col-4 col-md-2 col-xl-1 order-2 order-md-3">
+          <div class="row">
+            <div class="col-6 text-center"><a class="lead" href="../templates/shopping-cart.html"><i class="bi-basket d-block"></i><span class="d-none">Cart</span></a></div>
+            <div class="col-6"><a class="lead" href="../templates/wishlist.html"><i class="bi-heart d-block"></i><span class="d-none">List</span></a></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 col-xl-9 order-3 order-md-2">
+          <div class="input-group">
+            <select class="form-select d-none d-xl-block" name="dept-dropdown" style="width: 100px!important;">
+              <option value="Apple Store">All Departments</option>
+              <option value="Apple Store">Apple Store</option>
+              <option value="Apple Store">Baby</option>
+            </select>
+            <input class="form-control" type="text"><a class="btn btn-primary" href="#"><i class="bi-search"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-light py-3"><small class="d-block text-center">Copyright &copy; 2021. RewardTrax.com | All rights reserved.</small></footer>
+</body>
+<!-- Optional JavaScript; choose one of the two!-->
+<!-- Option 1: Bootstrap Bundle with Popper-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="/../src/app.js"></script>
+<script src="/../src/js/data.json"></script>
+<script src="/../src/js/devexgrids.js"></script>

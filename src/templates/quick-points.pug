@@ -1,0 +1,31 @@
+extends layout.pug
+
+block header-content
+    header
+        .container
+            .row.py-3 
+                .col-6.col-sm-4.col-lg-2.mx-auto
+                    img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="")
+            .row
+                .col-12.bg-light
+                    include ./includes/header-nav-logged-in.pug
+
+block main-content
+    main.d-flex.flex-column.flex-grow-1.py-4
+        .container
+            .row.mb-4
+                .col-12.col-md-8.mx-auto.screen-title
+                    h1.text-center Quick Points
+                    p.text-center.lead Redeem your points here and start shopping!
+            .row.mb-4
+                .col-12.col-md-8.mx-auto
+                    p.text-center Claim your points by entering the certificate number found on your On-the-Spot certificate. 
+                .col-12.col-md-6.col-lg-5.mx-auto
+                    form
+                        .mb-3
+                            label.form-label(for='quickpoints-certificate') Certificate Number
+                            input#quickpoints-certificate.form-control(type='email' aria-describedby='emailHelp')
+                        button.btn.btn-primary(type='submit') Reward Me!
+            .row
+                .col-12.col-md-8.mx-auto.text-center    
+                    img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/ISIQuickpoints_Demo15.jpg", alt="Quick Points Certificate")

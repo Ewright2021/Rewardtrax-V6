@@ -1,0 +1,11 @@
+{
+  "name": "v6",
+  "version": "1.0.0",
+  "description": "Fully responsive, mobile first framework for V6 themes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erika Wright",
+  "license": "ISC"
+}

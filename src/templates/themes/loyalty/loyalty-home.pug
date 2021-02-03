@@ -1,0 +1,62 @@
+extends ../../layout.pug
+
+block header-content
+    header.text-center
+       
+            .row.py-4.bg--primary.bg-primary.mx-auto 
+                
+            .row.align-items-center.mx-auto.justify-content-between
+                .col-12.col-sm-4.col-lg-2.col-xxl-1.mx-auto
+                    img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="")
+                .col-12.col-xl-10
+                    nav.navbar.navbar-expand-xl.navbar-light.bg-light
+                        .container-fluid
+                            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                                span.navbar-toggler-icon
+                            #navbarSupportedContent.collapse.navbar-collapse
+                                ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                                    li.nav-item
+                                        a.nav-link.active(aria-current='page' href='#') Home
+                                    li.nav-item
+                                        a.nav-link(href='#') Link
+
+block main-content
+        main.d-flex.flex-column.flex-grow-1.justify-content-center.py-4(style="background-image: url('https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png'); background-position: bottom; background-repeat:no-repeat; background-size: cover;")
+            .container
+                .row.mx-auto.d-flex.justify-content-center
+                    .col-12.col-md-6.p-3.demo15__login__wrapper
+                        h1 Welcome!
+                        p Sign in below to manage your account.
+                        form
+                            .mb-3
+                                label.form-label(for='exampleInputEmail1') Email address
+                                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+                                
+                            .mb-3
+                                label.form-label(for='exampleInputPassword1') Password
+                                input#exampleInputPassword1.form-control(type='password')
+                            button.btn.btn-primary(type='submit') Submit
+
+
+               
+block footer-content
+    footer
+        .container-fluid
+            .row
+                .col-12.bg-white
+                    ul.nav.justify-content-center
+                        li.nav-item
+                            a.nav-link(href="#") About Us
+                        li.nav-item
+                            a.nav-link(href="#") Rules
+                        li.nav-item
+                            a.nav-link(href="#") Privacy Policy
+                        li.nav-item
+                            a.nav-link(href="#") Terms of Use
+            .row
+                .col-12.bg-primary
+                    small.d-block.text-center.text-light.py-3 Copyright &copy; 2021 RewardTrax | All rights reserved.
+
+
+
+        

@@ -1,0 +1,57 @@
+extends layout.pug
+
+block header-content
+    header
+        .container
+            .row.py-3 
+                .col-6.col-sm-4.col-lg-2.mx-auto
+                    img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="")
+            .row
+                .col-12.bg-light
+                    include ./includes/header-nav-logged-in.pug
+
+block main-content
+    main.d-flex.flex-column.flex-grow-1.justify-content-center.py-4(style="background-image: url('https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png'); background-position: bottom; background-repeat:no-repeat; background-size: cover;")
+        .container
+            .row.mx-auto.d-flex.justify-content-center
+                .col-12.col-lg-6.p-3.demo15__profile__wrapper
+                    h2 Profile
+                    p.lead Update your profile information.
+                    .alert.alert-primary 
+                        p.mb-0 We cannot change your SSN. This information needs to be consistent for us to track your claims.
+                    form
+                        .mb-3
+                            label.form-label(for='enrollment__first-name') First Name
+                            input#enrollment__first-name.form-control(type='text' aria-describedby='enrollment__first-nameHelp')
+                        .mb-3
+                            label.form-label(for='enrollment__last-name') Last Name
+                            input#enrollment_last-name.form-control(type='text' aria-describedby='enrollment__last-nameHelp')
+                        .mb-3
+                            label.form-label(for='enrollment__birthdate') Birth Date
+                            input#enrollment_birthdate.form-control(type='text' aria-describedby='enrollment__birthdateHelp')
+                        .mb-3
+                            label.form-label(for='enrollment__hiredate') Hire Date
+                            input#enrollment_hiredate.form-control(type='text' aria-describedby='enrollment__hiredateHelp')
+                        .mb-3
+                            label.form-label(for='enrollment__email') Email
+                            input#enrollment_email.form-control(type='text' aria-describedby='enrollment__emailHelp')
+                        .mb-3
+                            label.form-label(for='enrollment__phone') Phone
+                            input#enrollment_phone.form-control(type='text' aria-describedby='enrollment__phoneHelp')
+                        .mb-3
+                            label.form-label(for='enrollment__address') Address
+                            input#enrollment_address.form-control(type='text' aria-describedby='enrollment__addressHelp')
+                        .mb-3
+                            label.form-label(for='enrollment__city') City
+                            input#enrollment_city.form-control(type='text' aria-describedby='enrollment__cityHelp')
+                        .mb-3
+                            label.form-label(for='enrollment__state') State
+                            input#enrollment_state.form-control(type='text' aria-describedby='enrollment__stateHelp')
+                        .mb-3
+                            label.form-label(for='enrollment__zip-code') Zip Code
+                            input#enrollment_zip-code.form-control(type='text' aria-describedby='enrollment__zip-codeHelp')
+                        .mb-3
+                            p.mb-0 I have read and accept the Terms of Use Agreement that governs the site which includes my consent to receive program related emails.
+                            
+                        
+                        button.btn.btn-primary(type='submit') Complete Enrollment 

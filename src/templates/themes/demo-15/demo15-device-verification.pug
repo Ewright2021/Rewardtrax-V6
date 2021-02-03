@@ -1,0 +1,58 @@
+extends ../../layout.pug
+
+block header-content
+    header.text-center
+        .container
+            .row.py-3 
+                .col-6.col-sm-4.col-lg-2.mx-auto
+                    img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="")
+            .row
+                .col-12.bg-light
+                    ul.nav.justify-content-center
+                        li.nav-item
+                            a.nav-link(href="../demo-15/demo15-activate-account.html") Activate Account
+                        li.nav-item
+                            a.nav-link(href="../demo-15/demo15-enroll.html") Enroll
+
+block main-content
+        main.d-flex.flex-column.flex-grow-1.justify-content-center.py-4(style="background-image: url('https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png'); background-position: bottom; background-repeat:no-repeat; background-size: cover;")
+            .container
+                .row.mx-auto.d-flex.justify-content-center
+                    .col-12.col-md-6.p-3.demo15__login__wrapper
+                        h1 Device Verification
+                        p.lead.text-danger You are attempting to sign in from an unrecognized device.
+                        p A verification code has been emailed to your registered email address. Please enter it below. If you do not have access to your registered email address, please contact us via email at support@rewardhq-cs.com.
+                        .alert.alert-danger(role="alert")
+                            p.mb-0 NOTICE: If you login again, it will generate a new email and new code. This action will invalidate previous codes. Verification codes expire after 20 minutes. 
+                        form
+                            .mb-3
+                                label.form-label(for='device-verification-code1') Enter Verification Code
+                                input#device-verification-code1.form-control(type='email' aria-describedby='device-verification-codeHelp')
+                            .mb-3
+                                button.btn.btn-primary(type='submit') Submit Verification Code
+                            .mb-3
+                                small.d-block Device verification uses cookies to help protect you. Please be sure your browser does not block cookies from this site. If your cookies are blocked or deleted, then you will have to verify this device again. 
+
+
+               
+block footer-content
+    footer
+        .container-fluid
+            .row
+                .col-12.bg-white
+                    ul.nav.justify-content-center
+                        li.nav-item
+                            a.nav-link(href="#") About Us
+                        li.nav-item
+                            a.nav-link(href="#") Rules
+                        li.nav-item
+                            a.nav-link(href="#") Privacy Policy
+                        li.nav-item
+                            a.nav-link(href="#") Terms of Use
+            .row
+                .col-12.bg-primary
+                    small.d-block.text-center.text-light.py-3 Copyright &copy; 2021 RewardTrax | All rights reserved.
+
+
+
+        
