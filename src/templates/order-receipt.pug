@@ -1,0 +1,81 @@
+extends layout.pug
+
+block header-content
+    header
+        .container
+            .row.py-3 
+                .col-6.col-sm-4.col-lg-2.mx-auto
+                    img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="")
+            .row
+                .col-12.bg-light
+                    include ./includes/header-nav-logged-in.pug
+
+block main-content
+    main.d-flex.flex-column.flex-grow-1.py-4
+        .container
+            include ../templates/includes/shopping-navbar.pug
+            .row.justify-content-center
+                .col-12.col-xl-8.screen-title
+                    h1.text-center Order Confirmed!
+
+                .col-xl-8
+                    .row.mb-2.justify-content-center
+                        .col-12
+                            p.text-center  Your order,
+                                span.px-1
+                                    a(href='./my-account.html') DEMO152160152103
+                                span has been received and is currently being processed. You can track your order
+                                span.px-1
+                                    a(href="./my-account.html") here
+                                span .
+                        .col-md-4.mb-2
+                            .row.text-center 
+                                .col-12.mb-2
+                                    a.btn.btn-primary.w-100(href="./shopping.html") Continue Shopping 
+                                .col-12
+                                    a(href="./my-account.html") Visit Your Account
+                        .col-12
+                            .row
+                                .col-12
+                                    p.fw-bold Purchased Items:
+                           
+                        .col-12#purchased-items-repeater
+                            .row.justify-content-center 
+                                -for(i=0;i<4; i++)
+                                    include ../templates/includes/purchased-item.pug
+
+                        .col-12
+                            p.fw-bold For Fast Answers:
+                            p We hope you enjoy your reward. If you have any questions or need to return an item, please use the form on the Contact page. Your items may be shipped by a third party. However, all questions about your order should be directed to us via the form on the Contact page. Please do not contact any third party directly as they may not have a complete record of your order. Remember for Fast Answers:
+                            p.fw-bold Please use the form on the Contact page.
+                            ul
+                                li You will receive a confirmation email after we have placed the order with the supplier.
+                                li You will receive another email when the supplier ships your item.
+                            p Thank you for shopping with us!
+                            
+
+
+                            
+            .row.justify-content-center
+                .col-12.col-xl-8
+                    .alert.alert-warning
+                        small.d-block#cart-disclaimer.text-center Items in your wish list expire and will be removed after 30 days. Points and availability subject to change. 
+                .col-12.col-xl-8
+                    include ../templates/includes/shoping-disclaimer.pug
+
+
+                        
+                                
+                        
+                        
+
+                        
+               
+                
+
+
+                            
+
+
+
+                

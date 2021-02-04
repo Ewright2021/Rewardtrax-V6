@@ -56,10 +56,10 @@ block main-content
                                         option(value='2') In-Store Pickup 
                         .col-12.mb-3.text-start
                             p.mb-0.text-muted You will select the store during checkout.
-                            a(href="#")
+                            a(data-bs-toggle="collapse" href="#item-detail-available-stores" role="button" aria-expanded="false" aria-controls="item-detail-available-stores")
                                 span.i.bi-geo-alt-fill 
                                 span See available stores near you.
-                        .col-12#item-detail-available-stores.text-start
+                        .col-12#item-detail-available-stores.collapse.text-start
                             include ../templates/includes/in-store-pickup__store-locations.pug
                                                             
 

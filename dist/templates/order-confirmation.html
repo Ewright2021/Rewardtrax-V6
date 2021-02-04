@@ -12,7 +12,7 @@
   <link href="https://cdn3.devexpress.com/jslib/20.2.4/css/dx.light.css" rel="stylesheet">
   <script src="https://cdn3.devexpress.com/jslib/20.2.4/js/dx.all.js"></script>
   <!-- Global Styles-->
-  <link rel="stylesheet" href="/../src/scss/style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Rewardtrax V6 Themes</title>
 </head>
 <body>
@@ -73,6 +73,9 @@
             <h3 class="section-title">Order Confirmation</h3>
           </div>
           <div class="row mb-4">
+            <div class="col-12 mb-2" id="covid-delivery-announcement">
+              <div class="alert alert-danger small"><small class="d-block fw-bold">Valued Program Participant:</small><small class="d-block mb-0">Receiving your rewards in a timely manner is extremely important to us. Typically, most orders are delivered within 7-10 business days. With the spread of COVID-19, we are experiencing some limitations in the availability of certain items and delays in shipping, in some cases up to a few weeks. We will continue to communicate any adjustments to your orders as quickly as we can, and we appreciate your patience during this time. </small></div>
+            </div>
             <div class="col-12" id="order-confirmation-cart-items">
               <div class="row mx-auto shadow-sm py-3 mb-3 px-sm-3">
                 <div class="col-12 col-sm-4 col-md-12 col-lg-4 col-xl-3 col-xxl-2 order-confirmation-item-wrapper border py-2 mt-0 mb-3 mb-lg-0"><img class="img-fluid" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg" alt=""></div>
@@ -86,79 +89,81 @@
                       <p class="mb-0 order-confirmation-item-price">106,370,000</p>
                     </div>
                     <div class="col-12"><small class="d-block text-muted fw-bold">Delivery Method</small>
-                      <div class="in-store-pickup-selected"><small><span class="pe-1"><i class="bi-patch-check-fill text-primary"></i></span><span>In Store Pickup <span>(<a href="#"><span>Check Locations</span></a></span><span>)</span></span></small></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 bg-light my-3">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="bg-light p-3"><small class="d-block fw-bold">Where are you located?</small><small class="d-block mb-0">Enter your ZIP code to check availability at stores near you.</small></div>
-                      <form class="d-block item__in-store-pickup bg-light px-3 pb-3 mb-0">
-                        <div class="row mb-3 align-items-end">
-                          <div class="col-8 col-xxl-4">
-                            <label class="form-label" for="checkout__recipient">Zip Code</label>
-                            <input class="form-control mb-0" id="checkout__recipient" type="text" aria-describedby="checkout__recipientHelp">
+                      <div class="in-store-pickup-selected"><small><span class="pe-1"><i class="bi-patch-check-fill text-primary"></i></span><span>In Store Pickup <span>(<a data-bs-toggle="collapse" href="#store-search" role="button" aria-expanded="false" aria-controls="store-search"><span>Check Locations</span></a></span><span>)</span></span></small></div>
+                      <div class="row"> 
+                        <div class="col-12 bg-light my-3 collapse" id="store-search">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="bg-light p-3"><small class="d-block fw-bold">Where are you located?</small><small class="d-block mb-0">Enter your ZIP code to check availability at stores near you.</small></div>
+                              <form class="d-block item__in-store-pickup bg-light px-3 pb-3 mb-0">
+                                <div class="row mb-3 align-items-end">
+                                  <div class="col-8">
+                                    <label class="form-label" for="checkout__recipient">Zip Code</label>
+                                    <input class="form-control mb-0" id="checkout__recipient" type="text" aria-describedby="checkout__recipientHelp">
+                                  </div>
+                                  <div class="col-4"><a class="w-100 btn btn-outline-primary mb-0" href="#">Search</a></div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-12"><small class="d-block fw-bold">Store Locations Near You</small></div>
+                                </div>
+                              </form>
+                              <div class="mb-3 bg-light">
+                                <ul class="list-group list-group-flush bg-light">
+                                  <li class="list-group-item bg-light pb-3">
+                                    <div class="row align-items-center">       
+                                      <div class="col-2 col-xl-1"><img class="img-responsive" src="https://isiprogram.rewardtrax.com/images/bestbuyImg.png" alt=""></div>
+                                      <div class="col-10 col-xl-11"><small class="fw-bold d-block">Atlanta, GA</small><small class="d-block mb-0">Order Today, Pick up on <span class="pe-1 item-pickup-date text-success fw-bold">1/25/2021</span></small><small class="d-block">
+                                          <div class="row">
+                                            <div class="col-8"><a class="text-secondary" href="#">Directions and Store Hours</a></div>
+                                            <div class="col-4 text-end"><a href="#">Select</a></div>
+                                          </div></small></div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item bg-light pb-3">
+                                    <div class="row align-items-center">       
+                                      <div class="col-2 col-xl-1"><img class="img-responsive" src="https://isiprogram.rewardtrax.com/images/bestbuyImg.png" alt=""></div>
+                                      <div class="col-10 col-xl-11"><small class="fw-bold d-block">Atlanta, GA</small><small class="d-block mb-0">Order Today, Pick up on <span class="pe-1 item-pickup-date text-success fw-bold">1/25/2021</span></small><small class="d-block">
+                                          <div class="row">
+                                            <div class="col-8"><a class="text-secondary" href="#">Directions and Store Hours</a></div>
+                                            <div class="col-4 text-end"><a href="#">Select</a></div>
+                                          </div></small></div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item bg-light pb-3">
+                                    <div class="row align-items-center">       
+                                      <div class="col-2 col-xl-1"><img class="img-responsive" src="https://isiprogram.rewardtrax.com/images/bestbuyImg.png" alt=""></div>
+                                      <div class="col-10 col-xl-11"><small class="fw-bold d-block">Atlanta, GA</small><small class="d-block mb-0">Order Today, Pick up on <span class="pe-1 item-pickup-date text-success fw-bold">1/25/2021</span></small><small class="d-block">
+                                          <div class="row">
+                                            <div class="col-8"><a class="text-secondary" href="#">Directions and Store Hours</a></div>
+                                            <div class="col-4 text-end"><a href="#">Select</a></div>
+                                          </div></small></div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item bg-light pb-3">
+                                    <div class="row align-items-center">       
+                                      <div class="col-2 col-xl-1"><img class="img-responsive" src="https://isiprogram.rewardtrax.com/images/bestbuyImg.png" alt=""></div>
+                                      <div class="col-10 col-xl-11"><small class="fw-bold d-block">Atlanta, GA</small><small class="d-block mb-0">Order Today, Pick up on <span class="pe-1 item-pickup-date text-success fw-bold">1/25/2021</span></small><small class="d-block">
+                                          <div class="row">
+                                            <div class="col-8"><a class="text-secondary" href="#">Directions and Store Hours</a></div>
+                                            <div class="col-4 text-end"><a href="#">Select</a></div>
+                                          </div></small></div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item bg-light pb-3">
+                                    <div class="row align-items-center">       
+                                      <div class="col-2 col-xl-1"><img class="img-responsive" src="https://isiprogram.rewardtrax.com/images/bestbuyImg.png" alt=""></div>
+                                      <div class="col-10 col-xl-11"><small class="fw-bold d-block">Atlanta, GA</small><small class="d-block mb-0">Order Today, Pick up on <span class="pe-1 item-pickup-date text-success fw-bold">1/25/2021</span></small><small class="d-block">
+                                          <div class="row">
+                                            <div class="col-8"><a class="text-secondary" href="#">Directions and Store Hours</a></div>
+                                            <div class="col-4 text-end"><a href="#">Select</a></div>
+                                          </div></small></div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
-                          <div class="col-4 col-xxl-2"><a class="w-100 btn btn-outline-primary mb-0" href="#">Search</a></div>
                         </div>
-                        <div class="row">
-                          <div class="col-12"><small class="d-block fw-bold">Store Locations Near You</small></div>
-                        </div>
-                      </form>
-                      <div class="mb-3 bg-light">
-                        <ul class="list-group list-group-flush bg-light">
-                          <li class="list-group-item bg-light pb-3">
-                            <div class="row align-items-center">       
-                              <div class="col-2 col-xl-1"><img class="img-responsive" src="https://isiprogram.rewardtrax.com/images/bestbuyImg.png" alt=""></div>
-                              <div class="col-10 col-xl-11"><small class="fw-bold d-block">Atlanta, GA</small><small class="d-block mb-0">Order Today, Pick up on <span class="pe-1 item-pickup-date text-success fw-bold">1/25/2021</span></small><small class="d-block">
-                                  <div class="row">
-                                    <div class="col-8"><a class="text-secondary" href="#">Directions and Store Hours</a></div>
-                                    <div class="col-4 text-end"><a href="#">Select</a></div>
-                                  </div></small></div>
-                            </div>
-                          </li>
-                          <li class="list-group-item bg-light pb-3">
-                            <div class="row align-items-center">       
-                              <div class="col-2 col-xl-1"><img class="img-responsive" src="https://isiprogram.rewardtrax.com/images/bestbuyImg.png" alt=""></div>
-                              <div class="col-10 col-xl-11"><small class="fw-bold d-block">Atlanta, GA</small><small class="d-block mb-0">Order Today, Pick up on <span class="pe-1 item-pickup-date text-success fw-bold">1/25/2021</span></small><small class="d-block">
-                                  <div class="row">
-                                    <div class="col-8"><a class="text-secondary" href="#">Directions and Store Hours</a></div>
-                                    <div class="col-4 text-end"><a href="#">Select</a></div>
-                                  </div></small></div>
-                            </div>
-                          </li>
-                          <li class="list-group-item bg-light pb-3">
-                            <div class="row align-items-center">       
-                              <div class="col-2 col-xl-1"><img class="img-responsive" src="https://isiprogram.rewardtrax.com/images/bestbuyImg.png" alt=""></div>
-                              <div class="col-10 col-xl-11"><small class="fw-bold d-block">Atlanta, GA</small><small class="d-block mb-0">Order Today, Pick up on <span class="pe-1 item-pickup-date text-success fw-bold">1/25/2021</span></small><small class="d-block">
-                                  <div class="row">
-                                    <div class="col-8"><a class="text-secondary" href="#">Directions and Store Hours</a></div>
-                                    <div class="col-4 text-end"><a href="#">Select</a></div>
-                                  </div></small></div>
-                            </div>
-                          </li>
-                          <li class="list-group-item bg-light pb-3">
-                            <div class="row align-items-center">       
-                              <div class="col-2 col-xl-1"><img class="img-responsive" src="https://isiprogram.rewardtrax.com/images/bestbuyImg.png" alt=""></div>
-                              <div class="col-10 col-xl-11"><small class="fw-bold d-block">Atlanta, GA</small><small class="d-block mb-0">Order Today, Pick up on <span class="pe-1 item-pickup-date text-success fw-bold">1/25/2021</span></small><small class="d-block">
-                                  <div class="row">
-                                    <div class="col-8"><a class="text-secondary" href="#">Directions and Store Hours</a></div>
-                                    <div class="col-4 text-end"><a href="#">Select</a></div>
-                                  </div></small></div>
-                            </div>
-                          </li>
-                          <li class="list-group-item bg-light pb-3">
-                            <div class="row align-items-center">       
-                              <div class="col-2 col-xl-1"><img class="img-responsive" src="https://isiprogram.rewardtrax.com/images/bestbuyImg.png" alt=""></div>
-                              <div class="col-10 col-xl-11"><small class="fw-bold d-block">Atlanta, GA</small><small class="d-block mb-0">Order Today, Pick up on <span class="pe-1 item-pickup-date text-success fw-bold">1/25/2021</span></small><small class="d-block">
-                                  <div class="row">
-                                    <div class="col-8"><a class="text-secondary" href="#">Directions and Store Hours</a></div>
-                                    <div class="col-4 text-end"><a href="#">Select</a></div>
-                                  </div></small></div>
-                            </div>
-                          </li>
-                        </ul>
                       </div>
                     </div>
                   </div>
@@ -183,14 +188,32 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-12 mb-2"><a class="btn btn-primary w-100" href="./checkout.html">Checkout Now</a></div>
-                <div class="col-12 text-center"><a href="#">Continue Shopping</a></div>
+                <div class="col-12 mb-2">
+                  <div class="alert alert-secondary mb-0">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" id="flexCheckDefault" type="checkbox" value="">
+                          <label class="form-check-label text-start" for="flexCheckDefault"><span>Click the check box to confirm your order and agree to the <span class="ps-1"> <a href="#">Return Policy.</a></span></span></label>
+                        </div>
+                      </div>
+                      <div class="col-12"><small class="small text-start d-block"><span class="small">By selecting the "Confirm Order" button, you agree to the Conditions of Use and Privacy Policy of BestBuy.com for those items fulfilled by Best Buy. </span></small></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mb-2"><a class="btn btn-primary w-100" href="./order-receipt.html">Confirm Your Order</a></div>
+                <div class="col-12">
+                  <div class="row">    
+                    <div class="col-6 mb-2 text-center border-end"><a class="text-secondary" href="#">Cancel Your Order</a></div>
+                    <div class="col-6 text-center"><a href="#">Continue Shopping</a></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="row mt-3">
             <div class="col-12">
-              <div class="alert alert-warning"><small><span class="small d-block text-center text-md-start" id="cart-disclaimer">Items in your shopping cart expire and will be removed after 30 days. Points and availability subject to change. </span></small></div>
+              <div class="alert alert-warning small"><small><span class="small d-block text-center text-md-start" id="cart-disclaimer">Items in your shopping cart expire and will be removed after 30 days. Points and availability subject to change. </span></small></div>
             </div>
           </div>
           <div class="row">   

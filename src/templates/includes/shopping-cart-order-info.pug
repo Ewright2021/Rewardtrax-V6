@@ -11,6 +11,24 @@
             p.mb-0.item-detail-price 127,637,900
     .row
         .col-12.mb-2
-            a.btn.btn-primary.w-100(href="./checkout.html") Checkout Now
-        .col-12.text-center
-            a(href="#") Continue Shopping
+            .alert.alert-secondary.mb-0
+                .row
+                    .col-12
+                        .form-check
+                            input#flexCheckDefault.form-check-input(type='checkbox' value='')
+                            label.form-check-label.text-start(for='flexCheckDefault')
+                                span Click the check box to confirm your order and agree to the 
+                                    span.ps-1 
+                                        a(href="#") Return Policy.
+                    .col-12
+                        small.small.text-start.d-block
+                            span.small By selecting the "Confirm Order" button, you agree to the Conditions of Use and Privacy Policy of BestBuy.com for those items fulfilled by Best Buy. 
+
+        .col-12.mb-2
+            a.btn.btn-primary.w-100(href="./order-receipt.html") Confirm Your Order
+        .col-12
+            .row     
+                .col-6.mb-2.text-center.border-end
+                    a.text-secondary(href="#") Cancel Your Order
+                .col-6.text-center
+                    a(href="#") Continue Shopping

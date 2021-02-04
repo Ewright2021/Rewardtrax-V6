@@ -23,12 +23,13 @@
                         span In Store Pickup 
 
                             span (
-                                a(href="#")
+                                a(data-bs-toggle="collapse" href="#store-search" role="button" aria-expanded="false" aria-controls="store-search")
                                     span Check Locations
                             
                             span )
-    .col-12.bg-light.my-3
-        include ./in-store-pickup__store-locations.pug
+                .row 
+                    .col-12.bg-light.my-3.collapse#store-search
+                        include ./in-store-pickup__store-locations.pug
            
 
    

@@ -12,7 +12,7 @@
   <link href="https://cdn3.devexpress.com/jslib/20.2.4/css/dx.light.css" rel="stylesheet">
   <script src="https://cdn3.devexpress.com/jslib/20.2.4/js/dx.all.js"></script>
   <!-- Global Styles-->
-  <link rel="stylesheet" href="/../src/scss/style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Rewardtrax V6 Themes</title>
 </head>
 <body>
@@ -106,19 +106,19 @@
               </div>
             </div>
             <div class="col-12 mb-3 text-start">
-              <p class="mb-0 text-muted">You will select the store during checkout.</p><a href="#"><span class="i bi-geo-alt-fill"> </span><span>See available stores near you.</span></a>
+              <p class="mb-0 text-muted">You will select the store during checkout.</p><a data-bs-toggle="collapse" href="#item-detail-available-stores" role="button" aria-expanded="false" aria-controls="item-detail-available-stores"><span class="i bi-geo-alt-fill"> </span><span>See available stores near you.</span></a>
             </div>
-            <div class="col-12 text-start" id="item-detail-available-stores">
+            <div class="col-12 collapse text-start" id="item-detail-available-stores">
               <div class="row">
                 <div class="col-12">
                   <div class="bg-light p-3"><small class="d-block fw-bold">Where are you located?</small><small class="d-block mb-0">Enter your ZIP code to check availability at stores near you.</small></div>
                   <form class="d-block item__in-store-pickup bg-light px-3 pb-3 mb-0">
                     <div class="row mb-3 align-items-end">
-                      <div class="col-8 col-xxl-4">
+                      <div class="col-8">
                         <label class="form-label" for="checkout__recipient">Zip Code</label>
                         <input class="form-control mb-0" id="checkout__recipient" type="text" aria-describedby="checkout__recipientHelp">
                       </div>
-                      <div class="col-4 col-xxl-2"><a class="w-100 btn btn-outline-primary mb-0" href="#">Search</a></div>
+                      <div class="col-4"><a class="w-100 btn btn-outline-primary mb-0" href="#">Search</a></div>
                     </div>
                     <div class="row">
                       <div class="col-12"><small class="d-block fw-bold">Store Locations Near You</small></div>
