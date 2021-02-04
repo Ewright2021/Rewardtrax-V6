@@ -64,7 +64,8 @@ html {
 }
 
 // Shopping Cart, Wishlist
-.shopping-cart-item-wrapper {
+.shopping-cart-item-wrapper,
+.order-confirmation-item-wrapper {
   height: 175px;
   overflow: hidden;
   margin: auto;
@@ -77,7 +78,8 @@ html {
 }
 
 h4.shopping-cart-item-title,
-h4.wish-list-item-title {
+h4.wish-list-item-title,
+.order-confirmation-item-title {
   font-size: 1rem;
 }
 
@@ -86,9 +88,12 @@ h4.wish-list-item-title {
   .shopping-cart-item-wrapper {
     height: 160px;
   }
+  .order-confirmation-item-wrapper {
+  }
 }
 @media (min-width: 1024px) {
-  .shopping-cart-item-wrapper {
+  .shopping-cart-item-wrapper,
+  .order-confirmation-item-wrapper {
     height: 160px;
   }
 }
@@ -98,7 +103,8 @@ h4.wish-list-item-title {
     height: 350px;
     width: 350px;
   }
-  .shopping-cart-item-wrapper {
+  .shopping-cart-item-wrapper,
+  .order-confirmation-item-wrapper {
     height: 140px;
   }
 }
@@ -109,5 +115,9 @@ h4.wish-list-item-title {
   }
   .h2.item-detail-price {
     font-size: 1.5rem;
+  }
+
+  .order-confirmation-item-wrapper {
+    height: 105px;
   }
 }

@@ -1,0 +1,27 @@
+form#shopping-checkout-form
+    .row.mb-3
+        .col-12
+            label.form-label(for='checkout__recipient') Recipient
+            input#checkout__recipient.form-control(type='text' aria-describedby='checkout__recipientHelp')
+    .row.mb-3
+        .col-md-6.mb-3.mb-lg-0
+            label.form-label(for='checkout__phone-number') Phone Number
+            input#checkout_phone-number.form-control(type='text' aria-describedby='checkout__phone-numberHelp')
+        .col-md-6
+            label.form-label(for='checkout__email') Email
+            input#checkout_email.form-control(type='text' aria-describedby='checkout__emailHelp')
+    .row.mb-3
+        .col-12
+            label.form-label(for='checkout__address') Address
+            input#checkout_address.form-control(type='text' aria-describedby='checkout__addressHelp')
+    .row.mb-3.mb-md-0
+        .col-md-6.mb-3
+            label.form-label(for='checkout__city') City
+            input#checkout_city.form-control(type='text' aria-describedby='checkout__cityHelp')
+        .col-md-2.mb-3
+            label.form-label(for='checkout__state') State
+            input#enrollment_state.form-control(type='text' aria-describedby='checkout__stateHelp')
+        .col-md-4
+
+            label.form-label(for='checkout__zip-code') Zip Code
+            input#checkout_zip-code.form-control(type='text' aria-describedby='checkout__zip-codeHelp')

@@ -1,0 +1,67 @@
+extends layout.pug
+
+block header-content
+    header
+        .container
+            .row.py-3 
+                .col-6.col-sm-4.col-lg-2.mx-auto
+                    img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="")
+            .row
+                .col-12.bg-light
+                    include ./includes/header-nav-logged-in.pug
+
+block main-content
+    main.d-flex.flex-column.flex-grow-1.py-4
+        .container
+            include ../templates/includes/shopping-navbar.pug
+            .row.justify-content-center
+                .col-lg-8
+                    .row.my-2  
+                        h3.section-title Checkout  
+                    .row.align-items-end.mb-1.d-md-none
+                        .col-6.col-md-5.text-start
+                            small.fw-bold Order Total 
+                        .col-6.col-md-7.text-end
+                            .h2.mb-0.item-detail-price 127,637,900
+                    .row.mb-3.d-md-none
+                        .col-12
+                            .border-bottom  
+                    .row.mb-3
+                        small.mb-0
+                            span.fw-bold.pe-1 NOTICE: 
+                            span Changing the address here may affect sales tax and can change the points required to redeem items in your cart. Your shipping address can also affect the availability of some items.
+                    .row.mb-3
+                        include ../templates/includes/forms/form__checkout.pug
+                    .row.d-none.d-lg-block
+                        include ../templates/includes/checkout-purchasing-info-details.pug
+
+
+                .col-lg-4#item-detail-pricing-wrapper.text-end
+                    .row.mt-md-0.align-items-end
+                        .col-12
+                            .row.align-items-end.mb-1
+                                .col-4.col-md-5.text-start
+                                    small.fw-bold Order Total 
+                                .col-8.col-md-7
+                                    .h2.mb-0.item-detail-price 37,900
+                            .row.align-items-end.mb-2
+                                .col-4.col-md-5.text-start
+                                    small Remaing Points
+                                .col-8.col-md-7
+                                   p.mb-0.item-detail-price 127,637,900
+                            .row.mb-2
+                                .col-12.mb-2
+                                    a.btn.btn-primary.w-100(href="./order-confirmation.html") Continue to Order Confirmation
+                                .col-12.text-center
+                                    a(href="#") Continue Shopping
+                            .row
+                                .col-12.text-start
+                                    .alert.alert-warning.mb-0
+                                        small.mb-0.d-block
+                                            span.small Points and availability subject to change. The points displayed here at the time you submit your order will govern the redemption of all products.
+                    .row.d-block.d-lg-none
+                        include ../templates/includes/checkout-purchasing-info-details.pug
+                    .row.mt-3
+                        .col-12
+                            small.small
+                                include ../templates/includes/shopping-cart-shopping-disclaimer.pug 

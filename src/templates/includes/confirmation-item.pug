@@ -1,0 +1,35 @@
+.row.mx-auto.shadow-sm.py-3.mb-3.px-sm-3
+    .col-12.col-sm-4.col-md-12.col-lg-4.col-xl-3.col-xxl-2.order-confirmation-item-wrapper.border.py-2.mt-0.mb-3.mb-lg-0
+        img.img-fluid(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg", alt="") 
+    .col-12.col-sm-8.col-md-12.col-lg-8.col-xl-9.col-xxl-10
+        .row
+            .col-12.col-xxl-8.mb-3
+                small.d-block.text-muted.fw-bold Item
+                h4.mb-0.order-confirmation-item-title Apple AirPods w/ Wireless Charging Case
+            .col-6.col-xxl-2.mb-3.text-xxl-center
+                small.d-block.text-muted.fw-bold Quantity 
+                small.confirmation-item-qty 100
+
+            .col-6.col-xxl-2.text-end
+                small.d-block.text-muted.fw-bold Points
+                p.mb-0.order-confirmation-item-price 106,370,000
+            .col-12
+                small.d-block.text-muted.fw-bold Delivery Method
+                
+                .in-store-pickup-selected
+                    small
+                        span.pe-1
+                            i.bi-patch-check-fill.text-primary
+                        span In Store Pickup 
+
+                            span (
+                                a(href="#")
+                                    span Check Locations
+                            
+                            span )
+    .col-12.bg-light.my-3
+        include ./in-store-pickup__store-locations.pug
+           
+
+   
+    

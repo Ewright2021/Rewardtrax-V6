@@ -60,14 +60,8 @@ block main-content
                                 span.i.bi-geo-alt-fill 
                                 span See available stores near you.
                         .col-12#item-detail-available-stores.text-start
-                            ul.list-group.list-group-flush
-                                -for(i=0; i<5; i++)
-                                    li.list-group-item
-                                        .row
-                                            .col-2
-                                                img.img-responsive(src="https://isiprogram.rewardtrax.com/images/bestbuyImg.png", alt="")
-                                            .col-10
-                                                p.mb-0 Order Today, Pick up on 1/25/2021
+                            include ../templates/includes/in-store-pickup__store-locations.pug
+                                                            
 
                         .col-12
                             .alert.alert-primary.text-start.mb-0 
