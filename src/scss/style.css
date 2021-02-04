@@ -16,6 +16,25 @@ html {
           flex-direction: column;
 }
 
+.shopping-header-image {
+  width: 100%;
+  height: 225px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  margin: auto;
+}
+
+.shopping-header-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
 .shopping-img-wrapper {
   width: 129px;
   height: 129px;
@@ -98,6 +117,9 @@ h4.wish-list-item-title {
 }
 
 @media (min-width: 1400px) {
+  .shopping-header-image {
+    height: 325px;
+  }
   .h2.item-detail-price {
     font-size: 1.5rem;
   }
