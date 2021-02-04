@@ -15,4 +15,125 @@ block main-content
         .container
             include ../templates/includes/shopping-navbar.pug
             .row
-                .col-12.col-xl-8.mb-3
+                .col-md-7.col-xl-8.col-xxl-9
+                    .row.my-2  
+                        h3.section-title Shopping Cart
+                   
+                    .row.mb-4
+                        .col-12#shopping-cart-items
+                            -for(i=0; i< 2; i++)    
+                                .row.mx-auto.shadow-sm.py-3.mb-3.px-sm-3
+                                    .col-12.col-sm-4.col-md-12.col-lg-4.col-xl-3.col-xxl-2.shopping-cart-item-wrapper.border.py-2.mt-0.mb-3.mb-lg-0
+                                        img.img-fluid(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg", alt="") 
+                                    .col-12.col-sm-8.col-md-12.col-lg-8.col-xl-9.col-xxl-10
+                                        .row
+                                            .col-12
+                                                h4.mb-0.shopping-cart-item-title Apple AirPods w/ Wireless Charging Case
+                                                .in-store-pickup
+                                                    small
+                                                        span.pe-1
+                                                            i.bi-patch-check-fill.text-primary
+                                                        span In-store Pickup Available
+                                        .row.small.my-2
+                                            .col-5.col-lg-5.col-xl-3.col-xxl-2.border-end
+                                                a.small(href="#") Move To Wishlist                        
+                                            .col-7.col-lg-7.col-xl-9.col-xxl-10
+                                                a.small(href="#") Remove From Cart
+                                        .row.small.align-items-md-end
+                                            .col-6.col-sm-6.col-md-6.col-xl-4.col-xxl-3.mb-3.mb-md-0
+                                                label.text-muted.fw-bold(for="quantity") Quantity 
+                                                .input-group
+                                                    button#button-addon1.btn.btn-outline-secondary(type='button') 
+                                                        i.bi-dash
+                                                    input.form-control.text-center(type='text' placeholder='1' aria-label='Example text with button addon' aria-describedby='button-addon1')
+                                                    button#button-addon2.btn.btn-outline-secondary(type='button') 
+                                                        i.bi-plus 
+
+                                            .col-6.col-sm-6.col-md-6.col-xl-8.col-xxl-9.mb-3.mb-md-0.text-sm-end
+                                                .row.align-items-center
+                                                    .col-12.text-end
+                                                        small.text-muted.fw-bold Points:
+                                                    .col-12.text-end
+                                                        p.h5.mb-0.search-results-item-price 106,370,000
+                            -for(i=0; i< 2; i++)    
+                                .row.mx-auto.shadow-sm.py-3.mb-3.px-sm-3
+                                    .col-12.col-sm-4.col-md-12.col-lg-4.col-xl-3.col-xxl-2.shopping-cart-item-wrapper.border.py-2.mt-0.mb-3.mb-lg-0
+                                        img.img-fluid(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6358/6358891fp.gif", alt="") 
+                                    .col-12.col-sm-8.col-md-12.col-lg-8.col-xl-9.col-xxl-10
+                                        .row
+                                            .col-12
+                                                h4.mb-0.shopping-cart-item-title ProForm - SMART Power 10.0 Exercise Bike - Black
+                                                .in-store-pickup
+                                                    small
+                                                        span.pe-1
+                                                            i.bi-patch-check-fill.text-primary
+                                                        span In-store Pickup Available
+                                        .row.small.my-2
+                                            .col-5.col-lg-5.col-xl-3.col-xxl-2.border-end
+                                                a.small(href="#") Move To Wishlist                        
+                                            .col-7.col-lg-7.col-xl-9.col-xxl-10
+                                                a.small(href="#") Remove From Cart
+                                        .row.small.align-items-md-end
+                                            .col-6.col-sm-6.col-md-6.col-xl-4.col-xxl-3.mb-3.mb-md-0
+                                                label.text-muted.fw-bold(for="quantity") Quantity 
+                                                .input-group
+                                                    button#button-addon1.btn.btn-outline-secondary(type='button') 
+                                                        i.bi-dash
+                                                    input.form-control.text-center(type='text' placeholder='1' aria-label='Example text with button addon' aria-describedby='button-addon1')
+                                                    button#button-addon2.btn.btn-outline-secondary(type='button') 
+                                                        i.bi-plus 
+
+                                            .col-6.col-sm-6.col-md-6.col-xl-8.col-xxl-9.mb-3.mb-md-0.text-sm-end
+                                                .row.align-items-center
+                                                    .col-12.text-end
+                                                        small.text-muted.fw-bold Points:
+                                                    .col-12.text-end
+                                                        p.h5.mb-0.search-results-item-price 151,200
+                                                   
+
+                                    
+                                    
+
+                                                    
+                                    
+                           
+
+                .col-md-5.col-xl-4.col-xxl-3#item-detail-pricing-wrapper.text-end
+                    .row.mt-md-0.align-items-end
+                        .col-12
+                            .row.align-items-end.mb-1
+                                .col-4.col-md-5.text-start
+                                    small.fw-bold Order Total 
+                                .col-8.col-md-7
+                                    .h2.mb-0.item-detail-price 127,637,900
+                            .row.align-items-end.mb-2
+                                .col-4.col-md-5.text-start
+                                    small Remaing Points
+                                .col-8.col-md-7
+                                   p.mb-0.item-detail-price 127,637,900
+                            .row
+                                .col-12.mb-2
+                                    a.btn.btn-primary.w-100(href="#") Checkout Now
+                                .col-12.text-center
+                                    a(href="#") Continue Shopping
+                    .row.mt-3
+                        .col-12
+                            .alert.alert-warning
+                                small.d-block#cart-disclaimer.text-center.text-md-start Items in your wish list expire and will be removed after 30 days. Points and availability subject to change. 
+                        .col-12
+                            include ../templates/includes/shopping-cart-shopping-disclaimer.pug 
+                        
+                                
+                        
+                        
+
+                        
+               
+                
+
+
+                            
+
+
+
+                

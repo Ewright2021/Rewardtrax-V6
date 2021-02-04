@@ -47,10 +47,48 @@ html {
   }
 }
 
+// Shopping Cart, Wishlist
+.shopping-cart-item-wrapper {
+  height: 175px;
+  overflow: hidden;
+  margin: auto;
+  img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+h4.shopping-cart-item-title,
+h4.wish-list-item-title {
+  font-size: 1rem;
+}
+
 // Media Queries
+@media (min-width: 576px) {
+  .shopping-cart-item-wrapper {
+    height: 160px;
+  }
+}
+@media (min-width: 1024px) {
+  .shopping-cart-item-wrapper {
+    height: 160px;
+  }
+}
+
 @media (min-width: 1200px) {
   .item-detail-main-image-wrapper {
     height: 350px;
     width: 350px;
+  }
+  .shopping-cart-item-wrapper {
+    height: 140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .h2.item-detail-price {
+    font-size: 1.5rem;
   }
 }
