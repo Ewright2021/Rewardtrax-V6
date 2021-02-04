@@ -4,18 +4,7 @@ block script-stylesheet
     link(rel="stylesheet", href="../../../../dist/style.css")
 
 block header-content
-    header.text-center
-        .container
-            .row.py-3 
-                .col-6.col-sm-4.col-lg-2.mx-auto
-                    img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="")
-            .row
-                .col-12.bg-light
-                    ul.nav.justify-content-center
-                        li.nav-item
-                            a.nav-link(href="../demo-15/demo15-activate-account.html") Activate Account
-                        li.nav-item
-                            a.nav-link(href="../demo-15/demo15-enroll.html") Enroll
+    include ./demo15-header--public.pug
 
 block main-content
         main.d-flex.flex-column.flex-grow-1.justify-content-center.py-4(style="background-image: url('https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png'); background-position: bottom; background-repeat:no-repeat; background-size: cover;")
@@ -32,7 +21,12 @@ block main-content
                             .mb-3
                                 label.form-label(for='exampleInputPassword1') Password
                                 input#exampleInputPassword1.form-control(type='password')
-                            button.btn.btn-primary(type='submit') Submit
+                            .row.justify-content-between.align-items-center
+                                .col-4
+                                    a.btn.btn-primary.w-100(href="./demo15-home.html") Login
+
+                                .col-6.text-end
+                                    a.mb-0(href="#") Forgot Your Password
 
 
                

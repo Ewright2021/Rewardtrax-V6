@@ -4,14 +4,7 @@ block script-stylesheet
     link(rel="stylesheet", href="../../../../dist/style.css")
 
 block header-content
-    header.text-center
-        .container
-            .row.py-3 
-                .col-6.col-sm-4.col-lg-2.mx-auto
-                    img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="")
-            .row
-                .col-12.bg-light
-                    include ../../includes/header-nav-logged-in.pug
+    include ./demo15-header--private.pug
                                     
 
 block main-content
