@@ -1,0 +1,58 @@
+extends layout.pug
+
+block script-stylesheet
+    link(rel="stylesheet", href="../../dist/style.css")
+
+block header-content
+    include ../templates/themes/demo-15/demo15-header--private.pug
+
+block main-content
+    main.d-flex.flex-column.flex-grow-1.py-4
+        .container
+            .row.mb-4
+                .col-12.col-md-8.mx-auto.screen-title
+                    h1.text-center Learn & Earn
+                    p.text-center.lead Earn points when you pass tests and quizzes.
+
+            .row.mb-4
+                .col-12.col-xxl-8.mx-auto  
+                    .row
+                        .col-12
+                            h5.widget-title.bg-primary.text-light.py-2.p-2 Available Questionnaires
+                        .col-12
+                            -for(i=0; i< 4; i++)    
+                                .row.mx-auto.shadow-sm.mb-3
+                                    .col-12.col-md-8.mb-3.mb-md-0
+                                        small.text-muted.d-block Quiz Title
+                                        a(href="#") About Incentive Solutions - DO NOT TAKE QUIZ
+                                    .col-6.col-md-2
+                                        small.text-muted.d-block Closes After
+                                        p 9/30/2022
+
+                                    .col-6.col-md-2.text-md-right
+                                        small.text-muted.d-block Summary
+                                        p.mb-0 Type: Quiz
+                                        p Questions: 4
+                    .row
+                        .col-12
+                            h5.widget-title.bg-primary.text-light.py-2.p-2 Completed Questionnaires
+                        .col-12
+                            -for(i=0; i< 4; i++)    
+                                .row.mx-auto.bg-light.pt-3.mb-3
+                                    .col-12.col-lg-4.mb-3.mb-lg-0
+                                        small.text-muted.d-block Quiz Title
+                                        a(href="#") About Incentive Solutions - DO NOT TAKE QUIZ
+                                    .col-12.col-md-6.col-lg-4
+                                        small.text-muted.d-block Summary
+                                        p.mb-0 Type: Quiz
+                                        p.mb-0 Questions: 4
+                                        p Award: 200 points for completing
+                                    .col-6.col-md-3.col-lg-2
+                                        small.text-muted.d-block Completed
+                                        p 9/30/2022
+
+                                    .col-6.col-md-3.col-lg-2
+                                        small.text-muted.d-block Results
+                                        p.mb-0 Thank You
+                            
+                    

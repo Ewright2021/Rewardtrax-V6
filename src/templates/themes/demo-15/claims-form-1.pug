@@ -1,0 +1,40 @@
+extends layout.pug
+
+block script-stylesheet
+    link(rel="stylesheet", href="../../dist/style.css")
+
+block header-content
+    include ../templates/themes/demo-15/demo15-header--private.pug
+
+block main-content
+    main.d-flex.flex-column.flex-grow-1.py-4
+        .container
+            .row.mb-4
+                .col-12.col-md-8.mx-auto.screen-title
+                    h1.text-center Enter Claims
+                    p.text-center.lead Please complete the fields below. Fields marked with * are required. 
+
+            .row.mb-4
+                .col-12.col-xxl-8.mx-auto  
+                    .row
+                        .col-12
+                            h5.widget-title.bg-primary.text-light.py-2.p-2 Promotion 2 - Goal Tiering
+                        .col-12
+                            -for(i=0; i< 4; i++)    
+                                .row.mx-auto.shadow-sm.mb-3.pb-3
+                                    .col-12.col-md-9.col-lg-4.mb-3 
+                                        label.small.form-label(for='invoice-number') Invoice Number
+                                        input.invoice-number.form-control(type='text' aria-describedby='invoice-numberHelp')                               
+                                    .col-8.col-md-3.mb-3 
+                                        label.small.form-label(for='sale-date') Sale Date
+                                        input.sale-date.form-control(type='text' aria-describedby='sale-dateHelp')                               
+                                    .col-4.col-md-6.col-lg-2 
+                                        label.small.form-label(for='quantity') Quantity
+                                        input.quantity.form-control(type='text' aria-describedby='quantityHelp')                               
+                                    .col-12.col-md-6.col-lg-3 
+                                        label.small.form-label(for='product-code') Product Code
+                                            small 
+                                                a(href="#") Product Lookup
+                                        input.product-code.form-control(type='text' aria-describedby='product-codeHelp') 
+                        .col-12
+                            a.btn.btn-outline-primary(href="#") Submit Sales                            

@@ -1,0 +1,48 @@
+extends layout.pug
+
+block script-stylesheet
+    link(rel="stylesheet", href="../../dist/style.css")
+
+block header-content
+    include ../templates/themes/demo-15/demo15-header--private.pug
+
+block main-content
+    main.d-flex.flex-column.flex-grow-1.py-4
+        .container
+            .row.mb-4 
+                .col-12.col-md-8.mx-auto.screen-title
+                    h1.text-center My Account
+                    p.text-center.lead Here you can view your order history detailing all of the points you have redeemed.
+            .row.mb-4
+                .col-12
+                    h5.widget-title.bg-primary.text-light.py-2.p-2 My Promotions
+                .col-12
+                    #promotionsGrid
+            .row
+                .col-12.mb-3
+                    h5.widget-title.bg-primary.text-light.py-2.p-2 My Points
+            .row.mb-4
+                .col-12.col-md-4
+                    .row
+                        .col-12 
+                            h6.bg-light.p-2.inner-widget-title Awarded
+                        .col-12
+                            h2.p-2.text-center 2,307,203
+                .col-12.col-md-4
+                    .row
+                        .col-12 
+                            h6.bg-light.p-2.inner-widget-title Redeemed
+                        .col-12
+                            h2.p-2.text-center 277,523
+                .col-12.col-md-4
+                    .row
+                        .col-12 
+                            h6.bg-light.p-2.inner-widget-title Remaining
+                        .col-12
+                            h2.p-2.text-center 2,029,680            
+            .row
+                .col-12
+                    h5.widget-title.bg-primary.text-light.p-2 My Transaction History
+                .col-12
+                    #transactionsGrid
+            

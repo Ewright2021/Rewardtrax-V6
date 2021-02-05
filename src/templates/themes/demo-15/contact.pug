@@ -1,0 +1,34 @@
+extends layout.pug
+
+block script-stylesheet
+    link(rel="stylesheet", href="../../dist/style.css")
+
+block header-content
+    include ../templates/themes/demo-15/demo15-header--private.pug
+
+block main-content
+    main.d-flex.flex-column.flex-grow-1.justify-content-center.py-4(style="background-image: url('https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png'); background-position: bottom; background-repeat:no-repeat; background-size: cover;")
+        .container
+            .row.mx-auto.d-flex.justify-content-center
+                .col-12.col-lg-6.p-3.demo15__profile__wrapper
+                    h2 Contact Us
+                    p.lead If you have a specific question or concern about this program or website that was not addressed, please complete the form below. We will reply to your inquiry within one business day. 
+                  
+                    form
+                        .mb-3
+                            label.form-label(for='contact__first-name') Name
+                            input#contact__first-name.form-control(type='text' aria-describedby='contact__nameHelp')
+                        .mb-3
+                            label.form-label(for='contact__email') Email
+                            input#contact_email.form-control(type='email' aria-describedby='contact__emailHelp')
+                        .mb-3
+                            label.form-label(for='contact__phone') Phone
+                            input#contact_phone.form-control(type='text' aria-describedby='contact__phoneHelp')
+                        .mb-3
+                            label.form-label(for='contact__subject') Subject
+                            input#contact_subject.form-control(type='text' aria-describedby='contact__subjectHelp')
+                        .mb-3
+                            label.form-label(for='contact__message') Your message/inquiry
+                            textarea#contact_message.form-control(rows="3")
+               
+                        button.btn.btn-primary(type='submit') Send Message 

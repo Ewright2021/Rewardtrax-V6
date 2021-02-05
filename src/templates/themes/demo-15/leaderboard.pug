@@ -1,0 +1,33 @@
+extends layout.pug
+
+block script-stylesheet
+    link(rel="stylesheet", href="../../dist/style.css")
+
+block header-content
+    include ../templates/themes/demo-15/demo15-header--private.pug
+
+block main-content
+    main.d-flex.flex-column.flex-grow-1.py-4
+        .container
+            .row
+                .col-12.col-md-8.mx-auto.screen-title
+                    h1.text-center Leader Board
+                    p.text-center.lead See where you and your competitors rank.
+            .row
+                .col-12.col-xxl-8.mx-auto.text-center
+                    .table-responsive
+                        table.table
+                            thead
+                                tr
+                                    th(scope="col") #
+                                    th(scope="col") First Name
+                                    th(scope="col") Last Name
+                                    th(scope="col") Region
+                                    th(scope="col") Points Awarded
+                            tbody#leaderboard-table   
+                                
+                                
+
+block page-scripts
+    script(src='/../src/js/leaderboard.js')
+                   

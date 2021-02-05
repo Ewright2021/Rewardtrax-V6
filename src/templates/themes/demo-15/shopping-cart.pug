@@ -1,0 +1,35 @@
+extends layout.pug
+
+block script-stylesheet
+    link(rel="stylesheet", href="../../dist/style.css")
+
+block header-content
+    include ../templates/themes/demo-15/demo15-header--private.pug
+
+block main-content
+    main.d-flex.flex-column.flex-grow-1.py-4
+        .container
+            include ../templates/includes/shopping-navbar.pug
+            .row
+                .col-md-7.col-xl-8.col-xxl-8
+                    .row.my-2  
+                        h3.section-title Shopping Cart
+                   
+                    .row.mb-4
+                        .col-12#shopping-cart-items
+                            -for(i=0; i< 5; i++)    
+                                include ../templates/includes/shopping-cart-item.pug
+                        
+                .col-md-5.col-xl-4.col-xxl-4#shopping-cart__pricing-wrapper.text-end
+                    .row.mt-md-0.align-items-end
+                        include ../templates/includes/shopping-cart-order-info.pug
+                    .row.mt-3
+                        .col-12
+                            .alert.alert-warning
+                                small
+                                    span.small.d-block#cart-disclaimer.text-center.text-md-start Items in your shopping cart expire and will be removed after 30 days. Points and availability subject to change. 
+                    .row    
+                        .col-12
+                            small.small
+                                include ../templates/includes/shopping-cart-shopping-disclaimer.pug
+                        
