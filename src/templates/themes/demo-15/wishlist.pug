@@ -1,15 +1,9 @@
 extends layout.pug
 
-block script-stylesheet
-    link(rel="stylesheet", href="../../dist/style.css")
-
-block header-content
-    include ../templates/themes/demo-15/demo15-header--private.pug
-
 block main-content
     main.d-flex.flex-column.flex-grow-1.py-4
         .container
-            include ../templates/includes/shopping-navbar.pug
+            include ../../includes/shopping-navbar.pug
             .row.justify-content-center
                 .col-12.col-xl-8.screen-title.mt-3
                     h1.text-center Wish List
@@ -56,7 +50,7 @@ block main-content
                     .alert.alert-warning
                         small.d-block#cart-disclaimer.text-center Items in your wish list expire and will be removed after 30 days. Points and availability subject to change. 
                 .col-12.col-xl-8
-                    include ../templates/includes/shoping-disclaimer.pug
+                    
 
 
 

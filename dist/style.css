@@ -12,15 +12,15 @@ html {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .shopping-header-image {
   width: 100%;
   height: 225px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   overflow: hidden;
   margin: auto;
@@ -28,9 +28,9 @@ html {
 
 .shopping-header-image img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   width: 100%;
   height: 100%;
 }
@@ -39,7 +39,7 @@ html {
   width: 129px;
   height: 129px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   overflow: hidden;
   margin: auto;
@@ -47,9 +47,9 @@ html {
 
 .shopping-img-wrapper img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   width: 100%;
   height: 100%;
 }
@@ -67,9 +67,9 @@ html {
 
 .item-detail-main-image-wrapper img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   width: 100%;
   height: 100%;
 }
@@ -84,9 +84,9 @@ html {
 .shopping-cart-item-wrapper img,
 .order-confirmation-item-wrapper img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   width: 100%;
   height: 100%;
 }
@@ -99,9 +99,9 @@ html {
 
 .wish-list-item-img-wrapper img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   width: 100%;
   height: 100%;
 }
@@ -120,9 +120,9 @@ h4.wish-list-item-title,
 
 .purchased-item-wrapper img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   width: 100%;
   height: 100%;
 }

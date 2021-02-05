@@ -1,22 +1,16 @@
 extends layout.pug
 
-block script-stylesheet
-    link(rel="stylesheet", href="../../dist/style.css")
-
-block header-content
-    include ../templates/themes/demo-15/demo15-header--private.pug
-
 block main-content
     main.d-flex.flex-column.flex-grow-1.py-4
         .container
-            include ../templates/includes/shopping-navbar.pug
-            include ../templates/includes/shopping-header-image.pug
+            include ../../includes/shopping-navbar.pug
+            include ../../includes/shopping-header-image.pug
 
             .row.mb-3
                 .col-12
                     h3.section-title Reward Yourself
                 .col-12
-                    include ../templates/includes/shopping-carousel.pug
+                    include ../../includes/shopping-carousel.pug
 
 
 
@@ -24,9 +18,9 @@ block main-content
                 .col-12
                     h3.section-title Featured Departments
                 .col-12
-                    include ../templates/includes/shopping-featured-categories.pug
+                    include ../../includes/shopping-featured-categories.pug
             .row.mb-3
-                include ../templates/includes/shoping-disclaimer.pug
+                include ../../includes/shoping-disclaimer.pug
 
 
 

@@ -1,15 +1,9 @@
 extends layout.pug
 
-block script-stylesheet
-    link(rel="stylesheet", href="../../dist/style.css")
-
-block header-content
-    include ../templates/themes/demo-15/demo15-header--private.pug
-
 block main-content
     main.d-flex.flex-column.flex-grow-1.py-4
         .container
-            include ../templates/includes/shopping-navbar.pug
+            include ../../includes/shopping-navbar.pug
 
             .row.my-3.align-items-center.justify-content-between 
                 .col-4.col-sm-7.col-md-4
@@ -26,9 +20,9 @@ block main-content
 
             .row.mt-lg-0
                 .col-12.col-lg-4.col-xl-3
-                    include ../templates/includes/shopping-mobile-filter-bar.pug
+                    include ../../includes/shopping-mobile-filter-bar.pug
 
-                    include ../templates/includes/shopping-desktop-filter-bar.pug
+                    include ../../includes/shopping-desktop-filter-bar.pug
 
                 .col-12.col-lg-8.col-xl-9
                     .row#breadcrumb.mb-3.d-none.d-md-flex
@@ -51,7 +45,7 @@ block main-content
                                         .shopping-img-wrapper.text-center
                                             img(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400fp.gif", alt="")
                                 
-                                a.search-results-item-title.d-block.mb-2(href="../templates/item-details.html") Apple - AirPods with Charging Case (Latest Model) - White
+                                a.search-results-item-title.d-block.mb-2(href="item-details.html") Apple - AirPods with Charging Case (Latest Model) - White
                                 .row.justify-content-around
                                     .col-sm-6
                                         p.mb-0.search-results-item-price 6370
@@ -80,6 +74,6 @@ block main-content
                             li.page-item
                                 a.page-link(href='#') Next
             .row
-                include ../templates/includes/shoping-disclaimer.pug
+                include ../../includes/shoping-disclaimer.pug
                                     
 
