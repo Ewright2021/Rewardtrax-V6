@@ -18,9 +18,9 @@
 </head>
 <link rel="stylesheet" href="../../dist/style.css">
 <body>
-  <header>
-    <div class="container">
-      <div class="row py-3"> 
+  <header class="text-center">
+    <div class="container-fluid">
+      <div class="row py-3">
         <div class="col-6 col-sm-4 col-lg-2 mx-auto"><img class="img-fluid" src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png" alt=""></div>
       </div>
       <div class="row">
@@ -40,6 +40,7 @@
                   <li class="nav-item"><a class="nav-link" href="/dist/templates/profile.html">Profile</a></li>
                   <li class="nav-item"><a class="nav-link" href="/dist/templates/contact.html">Contact</a></li>
                   <li class="nav-item"><a class="nav-link" href="/dist/templates/promotions.html">Promotions</a></li>
+                  <li class="nav-item"><a class="nav-link text-secondary" href="/dist/templates/themes/demo-15/demo15-login.html">Logout</a></li>
                 </ul>
               </div>
             </div>
@@ -273,7 +274,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 mb-2"><a class="btn btn-primary w-100" href="./order-receipt.html">Confirm Your Order</a></div>
+                <div class="col-12 mb-2"><a class="btn btn-primary w-100" href="./checkout.html">Continue to Checkout</a></div>
                 <div class="col-12">
                   <div class="row">    
                     <div class="col-6 mb-2 text-center border-end"><a class="text-secondary" href="#">Cancel Your Order</a></div>
@@ -295,6 +296,9 @@
         </div>
       </div>
     </div>
+  </main>
+  <main class="d-none flex-column flex-grow-1 justify-content-center">
+    <div class="container"></div>
   </main>
   <footer class="bg-dark text-light py-3"><small class="d-block text-center">Copyright &copy; 2021. RewardTrax.com | All rights reserved.</small></footer>
 </body>

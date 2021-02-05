@@ -4,14 +4,7 @@ block script-stylesheet
     link(rel="stylesheet", href="../../dist/style.css")
 
 block header-content
-    header
-        .container
-            .row.py-3 
-                .col-6.col-sm-4.col-lg-2.mx-auto
-                    img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="")
-            .row
-                .col-12.bg-light
-                    include ./includes/header-nav-logged-in.pug
+    include ../templates/themes/demo-15/demo15-header--private.pug
 
 block main-content
     main.d-flex.flex-column.flex-grow-1.justify-content-center.py-4(style="background-image: url('https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png'); background-position: bottom; background-repeat:no-repeat; background-size: cover;")

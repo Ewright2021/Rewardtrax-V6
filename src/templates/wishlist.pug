@@ -4,14 +4,7 @@ block script-stylesheet
     link(rel="stylesheet", href="../../dist/style.css")
 
 block header-content
-    header
-        .container
-            .row.py-3 
-                .col-6.col-sm-4.col-lg-2.mx-auto
-                    img.img-fluid(src="https://www.rewardtrax.com/brandeddemo15/images/CloudLogo.png", alt="")
-            .row
-                .col-12.bg-light
-                    include ./includes/header-nav-logged-in.pug
+    include ../templates/themes/demo-15/demo15-header--private.pug
 
 block main-content
     main.d-flex.flex-column.flex-grow-1.py-4
@@ -25,8 +18,8 @@ block main-content
                     .row.mb-4
                         .col-12#wish-list-items
                             -for(i=0; i< 2; i++)    
-                                .row.mx-auto.shadow-sm.py-3.mb-3.px-sm-3
-                                    .col-12.col-sm-4.col-md-3.col-lg-2.col-xl-3.col-xxl-2.shopping-cart-item-wrapper.border.py-2.mt-0.mb-3
+                                .row.mx-auto.shadow-sm.px-2.py-3.mb-3.px-sm-3
+                                    .col-12.col-sm-4.col-md-3.col-lg-2.col-xl-3.col-xxl-2.wish-list-item-img-wrapper.border.py-2.mt-0.mb-3.mb-sm-0
                                         img.img-fluid(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg", alt="") 
                                     .col-12.col-sm-8.col-md-9.col-lg-10.col-xl-9.col-xxl-10
                                         .row
