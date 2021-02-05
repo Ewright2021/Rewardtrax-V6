@@ -1,0 +1,17 @@
+extends layout.pug
+
+
+block header-content
+    include demo15-header--public.pug
+
+block main-content
+        main.d-flex.flex-column.flex-grow-1.justify-content-center.py-4(style="background-image: url('https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png'); background-position: bottom; background-repeat:no-repeat; background-size: cover;")
+            .container
+                .row.mx-auto.d-flex.justify-content-center.align-items-center
+                    .col-12.col-md-6.p-3.demo15__login__wrapper.text-center
+                        h2 404
+                        p.fw-bold File Not Found.
+
+
+block footer-content
+    include demo15-footer--public.pug
