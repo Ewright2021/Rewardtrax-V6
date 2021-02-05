@@ -16,22 +16,11 @@ head
   // link(rel="stylesheet", href="/../src/scss/style.css")  
   // * Production Path to Style Sheet */
 block script-stylesheet
-  link(rel="stylesheet", href="../dist/style.css")
+  link(rel="stylesheet", href="/dist/style.css")
   title Rewardtrax V6 Themes
 body
     block header-content
-        header
-            nav.navbar.navbar-expand-lg.navbar-light.bg-light
-                .container-fluid
-                    a.navbar-brand(href='#') Navbar
-                    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-                        span.navbar-toggler-icon
-                    #navbarSupportedContent.collapse.navbar-collapse
-                        ul.navbar-nav.me-auto.mb-2.mb-lg-0
-                            li.nav-item
-                                a.nav-link.active(aria-current='page' href='#') Home
-                            li.nav-item
-                                a.nav-link(href='#') Link
+        include demo15-header--private.pug
     block main-content
         main.d-flex.flex-column.flex-grow-1.justify-content-center
             .container
@@ -44,8 +33,7 @@ body
 
 
     block footer-content      
-        footer.bg-dark.text-light.py-3
-            small.d-block.text-center Copyright &copy; 2021. RewardTrax.com | All rights reserved.
+        include demo15-footer--private.pug
 
 // Optional JavaScript; choose one of the two!
 // Option 1: Bootstrap Bundle with Popper
@@ -53,4 +41,5 @@ script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap
 script(src="/../src/app.js")
 script(src='/../src/js/data.json')
 script(src='/../src/js/devexgrids.js')
+
 block page-scripts

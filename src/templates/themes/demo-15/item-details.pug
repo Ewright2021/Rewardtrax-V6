@@ -1,15 +1,9 @@
 extends layout.pug
 
-block script-stylesheet
-    link(rel="stylesheet", href="../../dist/style.css")
-
-block header-content
-    include ../templates/themes/demo-15/demo15-header--private.pug
-
 block main-content
     main.d-flex.flex-column.flex-grow-1.py-4
         .container
-            include ../templates/includes/shopping-navbar.pug
+            include ../../includes/shopping-navbar.pug
             .row
                 .col-12.col-xl-8.mb-3
                     a.d-block.mb-2(href="#")
@@ -43,7 +37,7 @@ block main-content
                                         button#button-addon2.btn.btn-outline-secondary(type='button') 
                                             i.bi-plus
                                 .col-6
-                                    a.btn.btn-outline-primary.w-100(href="#") Add to Cart
+                                    a.btn.btn-outline-primary.w-100(href="shopping-cart.html") Add to Cart
                                 .col-12.mt-3.text-start
                                     label(for="select") Select Delivery Method
                                     select.form-select(aria-label='Default select example')
@@ -56,7 +50,7 @@ block main-content
                                 span.i.bi-geo-alt-fill 
                                 span See available stores near you.
                         .col-12#item-detail-available-stores.collapse.text-start
-                            include ../templates/includes/in-store-pickup__store-locations.pug
+                            include ../../includes/in-store-pickup__store-locations.pug
                                                             
 
                         .col-12
@@ -66,7 +60,7 @@ block main-content
                     h5 Item Details
                 .col-12#item-detail-item-description
                     p The new AirPods combine intelligent design with breakthrough technology and crystal-clear sound. Powered by the new Apple H1 headphone chip, AirPods now feature hands-free access to Siri using just your voice. And up to 3 hours of talk time on a single charge.¹ 
-                include ../templates/includes/shoping-disclaimer.pug
+                include ../../includes/shoping-disclaimer.pug
 
 
                             

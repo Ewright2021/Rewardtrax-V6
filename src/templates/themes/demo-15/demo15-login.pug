@@ -1,10 +1,7 @@
-extends ../../layout.pug
-
-block script-stylesheet
-    link(rel="stylesheet", href="../../../../dist/style.css")
+extends layout.pug
 
 block header-content
-    include ./demo15-header--public.pug
+    include demo15-header--public.pug
 
 block main-content
         main.d-flex.flex-column.flex-grow-1.justify-content-center.py-4(style="background-image: url('https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png'); background-position: bottom; background-repeat:no-repeat; background-size: cover;")
@@ -31,23 +28,5 @@ block main-content
 
                
 block footer-content
-    footer
-        .container-fluid
-            .row
-                .col-12.bg-white
-                    ul.nav.justify-content-center
-                        li.nav-item
-                            a.nav-link(href="#") About Us
-                        li.nav-item
-                            a.nav-link(href="#") Rules
-                        li.nav-item
-                            a.nav-link(href="#") Privacy Policy
-                        li.nav-item
-                            a.nav-link(href="#") Terms of Use
-            .row
-                .col-12.bg-primary
-                    small.d-block.text-center.text-light.py-3 Copyright &copy; 2021 RewardTrax | All rights reserved.
-
-
-
+    include demo15-footer--public.pug
         
