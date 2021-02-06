@@ -41,28 +41,8 @@ block main-content
                                     li.breadcrumb-item.active(aria-current="page") Airpods
 
                     .row#search-results-grid
-                        -for(i=0; i< 20; i++)
-                            .col-6.col-lg-3.mb-5
-                                .card.mb-2
-                                    .favorite-item.text-end.pe-2
-                                        i.bi-heart
-                                    .card-body
-                                        .shopping-img-wrapper.text-center
-                                            img(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400fp.gif", alt="")
-                                
-                                a.search-results-item-title.d-block.mb-2(href="../templates/item-details.html") Apple - AirPods with Charging Case (Latest Model) - White
-                                .row.justify-content-around
-                                    .col-sm-6
-                                        p.mb-0.search-results-item-price 6370
-                                            small.text-muted  points
-                                    .col-sm-6.text-md-end.on-sale
-                                        small.text-success On Sale Now!
-                                    .col-12
-                                        .in-store-pickup
-                                            small
-                                                span.pe-1
-                                                    i.bi-patch-check-fill.text-primary
-                                                span In-store Pickup Available
+                        -for(i=0; i< 10; i++)
+                            include ../templates/includes/search-result-card.pug
 
             .row.my-3
                 .col-12.col-md-8.mx-auto#pagination
