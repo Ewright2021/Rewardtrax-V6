@@ -64,6 +64,10 @@ html {
 }
 
 // Shopping Cart, Wishlist
+.favorite-item {
+  cursor: pointer;
+  transition: all 0.3s;
+}
 .shopping-cart-item-wrapper,
 .order-confirmation-item-wrapper {
   height: 175px;

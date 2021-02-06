@@ -74,6 +74,12 @@ html {
   height: 100%;
 }
 
+.favorite-item {
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .shopping-cart-item-wrapper,
 .order-confirmation-item-wrapper {
   height: 175px;
