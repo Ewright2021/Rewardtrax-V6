@@ -37,13 +37,13 @@ block main-content
 
                     .row#search-results-grid
                         -for(i=0; i< 20; i++)
-                            .col-6.col-lg-3.mb-5
+                            .col-6.col-lg-3.mb-5.search-result-card
                                 .card.mb-2
                                     .favorite-item.text-end.pe-2
                                         i.bi-heart
                                     .card-body
                                         .shopping-img-wrapper.text-center
-                                            img(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400fp.gif", alt="")
+                                            img.search-item-thumbnail-img(src="", alt="")
                                 
                                 a.search-results-item-title.d-block.mb-2(href="item-details.html") Apple - AirPods with Charging Case (Latest Model) - White
                                 .row.justify-content-around
@@ -75,5 +75,8 @@ block main-content
                                 a.page-link(href='#') Next
             .row
                 include ../../includes/shoping-disclaimer.pug
+
+block page-scripts
+    script(src='/../src/js/shopping.js')
                                     
 
