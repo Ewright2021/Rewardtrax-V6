@@ -36,28 +36,64 @@ block main-content
                                     li.breadcrumb-item.active(aria-current="page") Airpods
 
                     .row#search-results-grid
-                        -for(i=0; i< 20; i++)
-                            .col-6.col-lg-3.mb-5.search-result-card
-                                .card.mb-2
-                                    .favorite-item.text-end.pe-2
-                                        i.bi-heart
-                                    .card-body
-                                        .shopping-img-wrapper.text-center
-                                            img.search-item-thumbnail-img(src="", alt="")
+                        mixin product(products)
+                                //each item in items
+                                .col-6.col-lg-4.mb-5.search-result-card
+                                    .card.mb-2
+                                        .favorite-item.text-end.pe-2
+                                            i.bi-heart
+                                        .card-body
+                                            .shopping-img-wrapper.text-center
+                                                a(href="")
+                                                    img.search-item-thumbnail-img(src="", alt="")
+                                    
+                                    a.search-results-item-title.d-block.mb-2(href="")
+                                    .row.justify-content-around
+                                        .col-sm-6
+                                            p.mb-0 
+                                                span.search-results-item-price
+                                                small.text-muted  points
+                                        .col-sm-6.text-md-end
+                                            small.text-success
+                                                span.on-sale On Sale Now!
+                                        .col-12
+                                            .in-store-pickup
+                                                small
+                                                    span.pe-1
+                                                        i.bi-patch-check-fill.text-primary
+                                                    
+                                                    span In-store Pickup Available
+                            
+                        -for(i=0; i< 5; i++)
+                            +product
+
+
+                            //- include ../../includes/search-result-card.pug
+                            //-   /**----THE CODE BELOW IS DEFAULT CARD STRUCTURE FOR REFERENCE---**/
+                            //- .col-6.col-lg-4.mb-5.search-result-card
+                            //-     .card.mb-2
+                            //-         .favorite-item.text-end.pe-2
+                            //-             i.bi-heart
+                            //-         .card-body
+                            //-             .shopping-img-wrapper.text-center
+                            //-                 img.search-item-thumbnail-img(src="", alt="")
                                 
-                                a.search-results-item-title.d-block.mb-2(href="item-details.html") Apple - AirPods with Charging Case (Latest Model) - White
-                                .row.justify-content-around
-                                    .col-sm-6
-                                        p.mb-0.search-results-item-price 6370
-                                            small.text-muted  points
-                                    .col-sm-6.text-md-end.on-sale
-                                        small.text-success On Sale Now!
-                                    .col-12
-                                        .in-store-pickup
-                                            small
-                                                span.pe-1
-                                                    i.bi-patch-check-fill.text-primary
-                                                span In-store Pickup Available
+                            //-     a.search-results-item-title.d-block.mb-2(href="item-details.html")
+                            //-     .row.justify-content-around
+                            //-         .col-sm-6
+                            //-             p.mb-0 
+                            //-                 span.search-results-item-price
+                            //-                 small.text-muted  points
+                            //-         .col-sm-6.text-md-end
+                            //-             small.text-success
+                            //-                 span.on-sale On Sale Now!
+                            //-         .col-12
+                            //-             .in-store-pickup
+                            //-                 small
+                            //-                     span.pe-1
+                            //-                         i.bi-patch-check-fill.text-primary
+                            //-                     span In-store Pickup Available
+
 
             .row.my-3
                 .col-12.col-md-8.mx-auto#pagination
@@ -77,6 +113,9 @@ block main-content
                 include ../../includes/shoping-disclaimer.pug
 
 block page-scripts
-    script(src='https://ewright2021.github.io/Rewardtrax-V6/src/js/shopping.js')
-                                    
 
+    // Production Path
+    //- script(src='https://ewright2021.github.io/Rewardtrax-V6/src/js/shopping.js')
+    // Development Path
+    script(src='/../../src/js/shopping.js')
+                                    
